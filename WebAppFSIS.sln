@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29230.47
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAppFSIS", "WebAppFSIS.csproj", "{9110A6BC-B0A9-421D-AE16-5307EB26A1BA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9110A6BC-B0A9-421D-AE16-5307EB26A1BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9110A6BC-B0A9-421D-AE16-5307EB26A1BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9110A6BC-B0A9-421D-AE16-5307EB26A1BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9110A6BC-B0A9-421D-AE16-5307EB26A1BA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7F475F36-9660-4326-84B1-66E9CA966949}
+	EndGlobalSection
+EndGlobal
