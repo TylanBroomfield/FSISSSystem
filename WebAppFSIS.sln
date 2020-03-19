@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.29230.47
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAppFSIS", "WebAppFSIS.csproj", "{9110A6BC-B0A9-421D-AE16-5307EB26A1BA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FSISSSystem", "FSISSSystem\FSISSSystem.csproj", "{87A5A0FF-0B9F-4F78-A40A-0DB34C73FC71}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{9110A6BC-B0A9-421D-AE16-5307EB26A1BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9110A6BC-B0A9-421D-AE16-5307EB26A1BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9110A6BC-B0A9-421D-AE16-5307EB26A1BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87A5A0FF-0B9F-4F78-A40A-0DB34C73FC71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87A5A0FF-0B9F-4F78-A40A-0DB34C73FC71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87A5A0FF-0B9F-4F78-A40A-0DB34C73FC71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87A5A0FF-0B9F-4F78-A40A-0DB34C73FC71}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
