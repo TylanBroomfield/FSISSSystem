@@ -71,6 +71,7 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Entity" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
@@ -262,6 +263,13 @@
     <Content Include="Scripts\popper.js.map" />
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
+    <Content Include="WebConnectionStrings.config" />
+    <Content Include="WebConnectionStrings.Debug.config">
+      <DependentUpon>WebConnectionStrings.config</DependentUpon>
+    </Content>
+    <Content Include="WebConnectionStrings.Release.config">
+      <DependentUpon>WebConnectionStrings.config</DependentUpon>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
@@ -352,6 +360,9 @@
       <Project>{87a5a0ff-0b9f-4f78-a40a-0db34c73fc71}</Project>
       <Name>FSISSSystem</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
