@@ -4,15 +4,14 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-
 using FSISSSystem.BLL;
 using FSISSSystem.ENTITIES;
 
 
-namespace WebApp.ExercisePages
+namespace WebAppFSIS.ExercisePages
 
 {
-    public partial class SingleRecordQuery : System.Web.UI.Page
+    public partial class SimpleQuery : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -23,39 +22,39 @@ namespace WebApp.ExercisePages
         {
             if (string.IsNullOrEmpty(TeamIDArg.Text))
             {
-                MessageLabel.Text = "Enter a region id value.";
+                MessageLabel.Text = "Enter a team id value.";
             }
             else
             {
-                int regionid = 0;
-                if (int.TryParse(RegionIDArg.Text, out regionid))
+                int teamid = 0;
+                if (int.TryParse(TeamIDArg.Text, out teamid))
                 {
-                    if (regionid > 0)
+                    if (teamid > 0)
                     {
-                        RegionController sysmgr = new RegionController();
-                        Region info = null;
-                        info = sysmgr.Regions_FindByID(regionid); //BLL controller method
+                        TeamController sysmgr = new TeamController();
+                        Team info = null;
+                        info = sysmgr.Teams_FindByID(teamid); //BLL controller method
                         if (info == null)
                         {
-                            MessageLabel.Text = "Region ID not found.";
-                            RegionID.Text = "";
-                            RegionDescription.Text = "";
+                            MessageLabel.Text = "Team ID not found.";
+                            TeamID.Text = "";
+                            TeamName.Text = "";
                         }
                         else
                         {
-                            RegionID.Text = info.RegionID.ToString();
-                            RegionDescription.Text = info.RegionDescription;
+                            TeamID.Text = info.TeamID.ToString();
+                            TeamName.Text = info.TeamName;
                         }
                     }
                     else
                     {
-                        MessageLabel.Text = "Region id must be greater than 0";
+                        MessageLabel.Text = "team id must be greater than 0";
                     }
 
                 }
                 else
                 {
-                    MessageLabel.Text = "Region id must be a number.";
+                    MessageLabel.Text = "team id must be a number.";
                 }
             }
         }

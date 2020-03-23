@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="SimpleQuery.aspx.cs" Inherits="WebAppFSIS.ExercisePages.WebForm2" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="SimpleQuery.aspx.cs" Inherits="WebAppFSIS.ExercisePages.SimpleQuery" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
     <div class="row">
@@ -13,10 +13,10 @@
         </div>
         <div class="col-md-6">
             <asp:Label runat="server" Text="Region ID:"></asp:Label>&nbsp;&nbsp;
-            <asp:Label id="RegionID" runat="server" ></asp:Label>
+            <asp:Label id="TeamID" runat="server" ></asp:Label>
             <br />
             <asp:Label runat="server" Text="Description:"></asp:Label>&nbsp;&nbsp;
-            <asp:Label id="RegionDescription" runat="server" ></asp:Label>
+            <asp:Label id="TeamName" runat="server" ></asp:Label>
         </div>
     </div>
 </asp:Content>
